@@ -1,0 +1,6 @@
+[submodule "web_static/web_static/W3C-Validator"]
+	path = web_static/web_static/W3C-Validator
+	url = git@github.com:AdwoaSerwah/AirBnB_clone.git
+[submodule "web_static/W3C-Validator"]
+	path = web_static/W3C-Validator
+	url = git@github.com:alx-tools/W3C-Validator.git
