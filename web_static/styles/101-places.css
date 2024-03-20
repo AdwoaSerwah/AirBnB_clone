@@ -22,16 +22,16 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
-article h2, .places h1 {
+article>h2, .places h1 {
     font-size: 30px;
     box-sizing: border-box;
     
 }
 
-article h2 {
+article>h2 {
     /*border: solid blueviolet 2px;*/
     margin-bottom: 0;
     margin-top: 0;
@@ -52,7 +52,6 @@ article h2 {
     font-size: 30px;
     display: flex;
     padding: 20px 8px;
-    /*box-sizing: border-box;*/
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
@@ -65,6 +64,7 @@ article h2 {
     box-sizing: border-box;
     flex-basis: 100%;
     display: flex;
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -112,6 +112,66 @@ article h2 {
     /*border: purple solid 2px;*/
     margin-top: 20px;
     margin-bottom: 20px;
-    box-sizing: border-box;
     flex-basis: 100%;
+}
+
+.places .amenities, .reviews {
+    /*border: solid indianred;*/
+    margin-top: 40px;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+
+.places .amenities>h2 {
+    font-size: 16px;
+    border-bottom: solid #DDDDDD 1px;
+}
+
+.places .amenities>ul, .reviews>ul {
+    list-style-type: none;
+    /*border: solid yellow 2px;*/
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.places .amenities>ul>li,  .reviews>ul>li>h3{
+    /*border: solid 2px green;*/
+    padding-left: 0;
+}
+
+.places .amenities>ul>li {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 35px;
+    margin-bottom: 6px;
+}
+
+
+.places .amenities>ul>:first-child {
+    background-image: url(../images/icon_tv.png);
+}
+
+.places .amenities>ul>:nth-child(2) {
+    background-image: url(../images/icon_wifi.png);
+}
+
+.places .amenities>ul>:nth-child(3) {
+    background-image: url(../images/icon_pets.png);
+}
+
+.places .amenities>ul>:last-child {
+    margin-bottom: 0;
+}
+
+.reviews>h2 {
+    font-size: 16px;
+    border-bottom: solid  #DDDDDD 1px;
+}
+
+.reviews h3 {
+    font-size: 14px;
+}
+
+.reviews p {
+    font-size: 12px;
 }
